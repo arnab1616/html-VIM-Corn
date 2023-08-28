@@ -18,7 +18,7 @@ html {
   /* height: 80px; */
 }
 .header-background form .form-control{
-  height: 45px;
+  /* height: 45px; */
   border-top-left-radius: 50px; 
   border-bottom-left-radius: 50px;
 }
@@ -29,7 +29,7 @@ html {
 .header-background .navbar .container-fluid .gradient-background .offcanvas-body .nav-items .nav-link{
   padding: 0;
 }
-.header-background .navbar .container-fluid .gradient-background .offcanvas-body .nav-link .btn{
+/* .header-background .navbar .container-fluid .gradient-background .offcanvas-body .nav-link .btn{
   border: none;
   padding-left: 10px;
   padding-right: 10px;
@@ -37,7 +37,7 @@ html {
   align-items: center;
   border-radius: 15px;
   box-shadow: 1px 1px 3px rgb(12, 12, 12);
-}
+} */
 .header-background .navbar .container-fluid .gradient-background .offcanvas-body .nav-link .btn .headIcontext{
   font-size: 0.8rem;
   padding: 3px;
@@ -74,6 +74,29 @@ section nav .tg button {
   .navbar-brand img {
     height: 45px;
     padding: 0;
+  }
+  .header-background .offcanvas.offcanvas-end{
+    width: auto;
+  }
+  .header-background .offcanvas.offcanvas-end .offcanvas-header{
+    padding: 10px;
+  }
+  .header-background .offcanvas.offcanvas-end .offcanvas-body{
+    padding: 10px;
+  }
+  .header-background .offcanvas.offcanvas-end .offcanvas-body .navbar-nav .nav-link .btn{
+    /* box-shadow: none;  */
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+  .header-background .offcanvas.offcanvas-end .offcanvas-body .navbar-nav .nav-link{
+    padding: 2px;
+  }
+  .header-background .navbar .container-fluid .gradient-background .offcanvas-body .nav-link .btn .headIcontext{
+    font-size: 0.8rem;
+    padding: 0px 10px;
+    margin: 0;
   }
   .sideBar .offcanvas.offcanvas-bottom{
     height: auto;
@@ -123,6 +146,15 @@ section nav .tg button {
     height: 40px;
     width: 40px;
     /* margin-right: 20px; */
+  }
+  .header-background .navbar .container-fluid .gradient-background .offcanvas-body .nav-link .btn{
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgb(12, 12, 12);
   }
   .sideBar {
     float: right;
