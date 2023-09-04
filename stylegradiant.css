@@ -19,17 +19,21 @@ body {
   /* height: 80px; */
 }
 .header-background form .form-control{
-  /* height: 45px; */
+  height: 42px;
   border-top-left-radius: 50px; 
   border-bottom-left-radius: 50px;
 }
 .header-background form .btn {
-  height: 45px;
-  width: 45px;
+  height: 42px;
+  width: 42px;
+  padding: 12px;
 }
-.header-background .navbar .container-fluid .gradient-background .offcanvas-body .nav-items .nav-link{
-  padding: 0;
+.header-background .navbar .container-fluid .gradient-background .offcanvas{
+  /* display: flex;
+  align-items: center; */
+  margin:auto;
 }
+
 /* .header-background .navbar .container-fluid .gradient-background .offcanvas-body .nav-link .btn{
   border: none;
   padding-left: 10px;
@@ -72,9 +76,6 @@ body {
 .bottom-part .cntr .grid-box{
   background: #9e9b9b;
 }
-.s {
-  padding-right: 7px;
-}
 section nav .tg button {
   border: none;
   justify-content: center;
@@ -93,8 +94,9 @@ section nav .tg button {
 }
 @media (min-width: 319px) and (max-width: 992px) {
   .navbar-brand img {
-    height: 45px;
+    height: 40px;
     padding: 0;
+    margin-right: 0;
   }
   .tg .btn{
     border-radius: 50px;
@@ -103,7 +105,7 @@ section nav .tg button {
     border: none;
   }
   .tg .btn svg{
-    color: black;
+    color: rgb(39, 38, 38);
   }
   .header-background .offcanvas.offcanvas-end{
     width: auto;
@@ -122,6 +124,11 @@ section nav .tg button {
     border-radius: 0;
     width: 100%;
   }
+  .header-background .offcanvas{
+    display: flex;
+    align-items: center;
+    
+  }
   .header-background .offcanvas.offcanvas-end .offcanvas-body .navbar-nav .nav-link{
     padding: 2px;
   }
@@ -130,6 +137,24 @@ section nav .tg button {
     padding: 0px 10px;
     margin: 0;
   }
+  .header-background .col-1{
+    display: none;
+  }
+  .header-background .loginDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+  }
+  .header-background .loginDiv .login{
+      text-decoration: none;
+      color: black;
+      background: white;
+      padding: 2px;
+      font-size: 0.9rem;
+      margin-left: 5px;
+      margin-right: 5px;
+   }
   .sideBar .offcanvas.offcanvas-bottom{
     height: auto;
     padding: 0;
@@ -155,9 +180,9 @@ section nav .tg button {
     height: 60px; */
     margin-top: 8px;
   }
-    .sideBar .navbar-expand-lg .navbar-nav .nav-link{ 
-      padding: 0;
-    }
+  .sideBar .navbar-expand-lg .navbar-nav .nav-link{ 
+    padding: 0;
+  }
     .sideBar .navbar-expand-lg .navbar-nav {
       flex-direction: row;
       justify-content: space-around;
@@ -174,6 +199,9 @@ section nav .tg button {
   
 }
 @media (min-width: 992px) {
+  .navbar-brand{
+    margin-right: 50px;
+  }
   .header-background .navbar .container-fluid.d-flex .btn{
     height: 40px;
     width: 40px;
@@ -182,15 +210,34 @@ section nav .tg button {
   .tg .btn{
     display: none;
   }
+  .header-background .navbar .container-fluid .gradient-background  .nav-link{
+    /* align-items: center; */
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .header-background .navbar .container-fluid .gradient-background .offcanvas-body .nav-link .btn{
     border: none;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px 8px;
     display: flex;
     align-items: center;
     border-radius: 15px;
     box-shadow: 1px 1px 3px rgb(12, 12, 12);
   }
+  .header-background .loginDiv{
+    display: none;
+  }
+  .header-background .col-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    .header-background .col-1 .login{
+      text-decoration: none;
+      color: black;
+      background: white;
+      padding: 4px 10px;
+    }
   .sideBar {
     float: right;
     position: fixed;
@@ -200,7 +247,7 @@ section nav .tg button {
     height: auto; /*auto*/
     max-width: 80px;
     border-radius: 50px;
-    transform: translate(0%,-220%);
+    transform: translate(0%,50%);
     align-items: center;
     justify-self: center;
   }
