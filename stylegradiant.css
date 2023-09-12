@@ -104,6 +104,9 @@ section nav .tg button {
     width: 50px; 
     border: none;
   }
+  .tg .mx-2:hover{
+    background: #295dfb;
+  }
   .tg .btn svg{
     color: rgb(39, 38, 38);
   }
