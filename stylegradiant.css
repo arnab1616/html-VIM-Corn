@@ -356,6 +356,19 @@ section nav .tg button {
     .bottom-part .RecomendedText{
       font-size: 1.2rem;
     }
+  .bottom-part .cntr .grid-box .moviePic .movieText{
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgb(5, 205, 105);
+}
+  .bottom-part .cntr .grid-box .movieDetails p{
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  color: rgb(255, 255, 255);
+}
 }
 @media (min-width: 600px) and (max-width: 992px) {
   .bottom-part .cntr{
